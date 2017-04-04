@@ -1,0 +1,11 @@
+/* CSS declarations go here */
+// Theme
+@import "../imports/ui/stylesheets/variables.scss";
+
+// App
+@import "../imports/startup/client/app/app";
+
+//pages
+@import "../imports/ui/pages/mosaique/mosaique";
+@import "../imports/ui/pages/auth/login";
+@import "../imports/ui/pages/auth/register";

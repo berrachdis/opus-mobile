@@ -1,0 +1,21 @@
+<ion-content>
+	<ion-list align-items-center >
+		<form [formGroup]="loginInForm" (ngSubmit)="logIn()" class="list">
+			<ion-item>
+				<ion-label floating>Username</ion-label>
+				<ion-input type="text" formControlName="email" name="email"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>Password</ion-label>
+				<ion-input type="password" formControlName="password" name="password"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<button ion-button block color="danger">Register</button>
+			</ion-item>
+		</form>
+		<ion-item>
+			<button ion-button block color="danger" [navPush]="registerPage">Log In</button>
+		</ion-item>
+	</ion-list>
+</ion-content>

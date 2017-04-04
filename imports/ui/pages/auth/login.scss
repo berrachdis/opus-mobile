@@ -1,0 +1,19 @@
+ion-navbar .toolbar-background button{
+    background: transparent;
+}
+ion-header {
+  background-image: none !important;
+}
+.nav-bar-block, .bar {
+  background-color: inherit !important;
+}
+.login-content{
+	//background-color: rgba(0, 0, 0, 0.7);
+	.crop{
+		width : 200px; 
+		height : 200px;
+		margin-top: 80px;
+		margin-left: 25%;
+	}
+	
+}

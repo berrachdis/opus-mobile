@@ -1,0 +1,43 @@
+<ion-header no-shadow>
+  <ion-navbar transparent>
+  
+  </ion-navbar>
+</ion-header>
+<ion-content class="register-content">
+<ion-grid>
+  <ion-row>
+    <ion-col>
+    </ion-col>
+    <ion-col class="gridContainer" width-70>
+		<div class="canvasContainer">
+			<img [src]='imageCrop' class="backgroundCrop"/>
+			<img src='crop.png' class="overlayCrop"/>
+		</div>
+    </ion-col>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+	<ion-list>
+		<form [formGroup]="registerForm" (ngSubmit)="register()">
+			<ion-item>
+				<ion-label floating>Email</ion-label>
+				<ion-input type="text" formControlName="email" name="email"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>Password</ion-label>
+				<ion-input type="password" formControlName="password" name="password"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label floating>Confirm Password</ion-label>
+				<ion-input type="password" formControlName="password_confirm" name="password_confirm"></ion-input>
+			</ion-item>
+			<ion-item>
+				<button ion-button block color="danger">Register</button>
+			</ion-item>
+		</form>
+			<ion-item>
+				<button ion-button block color="danger" [navPush]="logInPage">Log In</button>
+			</ion-item>
+	</ion-list>
+</ion-content>

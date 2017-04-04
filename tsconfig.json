@@ -1,0 +1,42 @@
+ {
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+        "*": ["*"]
+    },
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es5",
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "noImplicitAny": false,
+    "types": [
+      "meteor-typings",
+      "@types/underscore",
+      "@types/node",
+      "@types/easeljs"
+    ]
+  },
+  "include": [
+    "client/**/*.ts",
+    "server/**/*.ts",
+    "imports/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "buildOnSave": false,
+  "compileOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}
